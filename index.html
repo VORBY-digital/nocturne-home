@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NOCTURNE — концептуальный онлайн-магазин ароматов для дома." />
+    <title>NOCTURNE — ароматы для дома</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shipping-bar">Бесплатная доставка по России при заказе от 7 000 ₽ <span>·</span> новый дроп уже в каталоге</div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NOCTURNE — на главную">NOCTURNE<span>®</span></a>
+      <button class="menu-button" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
+      <nav class="nav" aria-label="Главное меню">
+        <a href="#catalog">Каталог</a>
+        <a href="#manifest">Манифест</a>
+        <a href="#journal">Журнал</a>
+      </nav>
+      <button class="cart-button" aria-label="Открыть корзину">Корзина <b>0</b></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Дом, в который хочется возвращаться</p>
+          <h1 id="hero-title">Свет гаснет.<br /><em>Атмосфера</em><br />остаётся.</h1>
+          <p class="hero-text">Ароматы, которые не просто заполняют пространство, а задают ему характер. Восковые свечи и диффузоры, созданные малыми тиражами.</p>
+          <a class="button button--lime" href="#catalog">Выбрать аромат <span>↘</span></a>
+        </div>
+        <div class="hero-art" aria-label="Свеча NOCTURNE Night Bloom">
+          <div class="orb orb--one"></div><div class="orb orb--two"></div>
+          <div class="hero-label">DROP 04 / 2026</div>
+          <div class="candle candle--hero"><div class="candle-lid"></div><div class="candle-flame"></div><div class="candle-copy">NOCTURNE <small>NIGHT BLOOM</small></div></div>
+          <p class="art-caption">01— NIGHT BLOOM<br /><span>black tea / fig / cedar</span></p>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Преимущества"><div>СОЕВЫЙ ВОСК <span>✦</span> СЛОЖНЫЕ КОМПОЗИЦИИ <span>✦</span> РУЧНАЯ РАБОТА <span>✦</span> СОЗДАНО В МОСКВЕ <span>✦</span> СОЕВЫЙ ВОСК <span>✦</span></div></section>
+
+      <section class="catalog section" id="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Выберите своё настроение</p><h2 id="catalog-title">Тихие герои<br /><em>вашего дома.</em></h2></div>
+          <div class="filters" role="group" aria-label="Фильтр каталога">
+            <button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="candle">Свечи</button><button class="filter" data-filter="diffuser">Диффузоры</button>
+          </div>
+        </div>
+
+        <div class="products">
+          <article class="product" data-kind="candle" data-name="Night Bloom" data-price="3900">
+            <div class="product-visual visual--blue"><span class="tag">Bestseller</span><div class="product-candle product-candle--blue"><b>NOCTURNE</b><small>NIGHT BLOOM</small></div><span class="visual-number">01</span></div>
+            <div class="product-info"><div><h3>Night Bloom</h3><p>инжир · чёрный чай · кедр</p></div><strong>3 900 ₽</strong></div>
+            <button class="add-button">В корзину <span>+</span></button>
+          </article>
+          <article class="product" data-kind="diffuser" data-name="After Rain" data-price="4500">
+            <div class="product-visual visual--green"><div class="product-diffuser"><i></i><i></i><i></i><i></i><b>NOCTURNE</b><small>AFTER RAIN</small></div><span class="visual-number">02</span></div>
+            <div class="product-info"><div><h3>After Rain</h3><p>мох · петрикор · бергамот</p></div><strong>4 500 ₽</strong></div>
+            <button class="add-button">В корзину <span>+</span></button>
+          </article>
+          <article class="product" data-kind="candle" data-name="Sunday, 11:40" data-price="3600">
+            <div class="product-visual visual--peach"><div class="product-candle product-candle--peach"><b>NOCTURNE</b><small>SUNDAY, 11:40</small></div><span class="visual-number">03</span></div>
+            <div class="product-info"><div><h3>Sunday, 11:40</h3><p>нероли · хлопок · мускус</p></div><strong>3 600 ₽</strong></div>
+            <button class="add-button">В корзину <span>+</span></button>
+          </article>
+          <article class="product" data-kind="diffuser" data-name="First Light" data-price="4500">
+            <div class="product-visual visual--yellow"><div class="product-diffuser product-diffuser--yellow"><i></i><i></i><i></i><i></i><b>NOCTURNE</b><small>FIRST LIGHT</small></div><span class="visual-number">04</span></div>
+            <div class="product-info"><div><h3>First Light</h3><p>юдзу · имбирь · белый чай</p></div><strong>4 500 ₽</strong></div>
+            <button class="add-button">В корзину <span>+</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifest" id="manifest">
+        <div class="manifest-number">( 02 )</div>
+        <p class="manifest-lead">Мы верим: у дома есть свой саундтрек.<br />Но сначала — <em>свой аромат.</em></p>
+        <div class="manifest-grid"><p>Мы собираем ноты так, чтобы они жили с вами: встречали утром, не спорили с обедом и становились глубже к вечеру.</p><a href="#journal" class="text-link">Узнать о производстве <span>↗</span></a></div>
+      </section>
+
+      <section class="journal section" id="journal">
+        <div class="journal-card"><p class="eyebrow">Nocturne notes — 001</p><h2>Зачем дому<br />нужны <em>ритуалы?</em></h2><p>Небольшой гид о том, как запахи создают ощущение «я дома».</p><a class="button button--dark" href="#journal">Читать заметку <span>↗</span></a></div>
+        <div class="journal-quote"><span>“</span><p>Запах — это самый короткий путь к воспоминанию, которое ещё не случилось.</p><small>NOCTURNE, NOTES ON HOME</small></div>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top">NOCTURNE<span>®</span></a><p>Ароматы для вашего личного вечера.</p><div><a href="#catalog">Каталог</a><a href="#top">Instagram ↗</a><a href="#top">Telegram ↗</a></div><small>© 2026 NOCTURNE. Концептуальный проект для портфолио.</small></footer>
+
+    <aside class="cart-panel" aria-label="Корзина" aria-hidden="true"><div class="cart-top"><h2>Корзина <span class="cart-total-count">0</span></h2><button class="close-cart" aria-label="Закрыть корзину">×</button></div><div class="cart-items"><p class="empty">Пока здесь пусто.<br />Самое время выбрать настроение.</p></div><div class="cart-bottom"><div><span>Итого</span><strong class="cart-total">0 ₽</strong></div><button class="checkout">Оформить заказ <span>↗</span></button></div></aside><div class="overlay"></div><div class="toast" role="status">Добавлено в корзину</div>
+    <script src="script.js"></script>
+  </body>
+</html>
